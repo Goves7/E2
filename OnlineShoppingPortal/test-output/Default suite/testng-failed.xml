@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testPackage.MavenParameterization">
+      <class name="testPackage.AddToCartTest">
         <methods>
-          <include name="launchGoogleUsingParameter"/>
+          <include name="addToCartTC_001"/>
+          <include name="logout"/>
+          <include name="login"/>
+          <include name="browserSetup"/>
+          <include name="browserTearDown"/>
         </methods>
-      </class> <!-- testPackage.MavenParameterization -->
+      </class> <!-- testPackage.AddToCartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

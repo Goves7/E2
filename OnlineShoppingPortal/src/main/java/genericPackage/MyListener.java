@@ -34,7 +34,7 @@ public class MyListener extends BaseTest implements ITestListener{
 		
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File dest = new File("./ititscreenshots/"+result.getName()+""+dateTime+".png");
+		File dest = new File("./screenshots/"+result.getName()+""+dateTime+".png");
 		try {
 			Files.copy(src, dest);
 		} catch (IOException e) {
